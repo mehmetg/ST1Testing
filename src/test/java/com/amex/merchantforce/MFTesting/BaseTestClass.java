@@ -40,8 +40,8 @@ public abstract class BaseTestClass implements SauceOnDemandSessionIdProvider, S
 
 	private static final Logger logger = LogManager.getLogger();
 
-	public String username = System.getenv("SAUCE_USERNAME");
-	public String accesskey = System.getenv("SAUCE_ACCESS_KEY");
+	public String username;// = System.getenv("SAUCE_USERNAME");
+	public String accesskey;// = System.getenv("SAUCE_ACCESS_KEY");
 	private SauceREST sauceREST;
 
 	public SauceOnDemandAuthentication authentication;
