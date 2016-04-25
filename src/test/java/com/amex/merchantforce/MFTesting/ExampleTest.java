@@ -52,7 +52,7 @@ public class ExampleTest extends BaseTestClass {
 //--------------------------------------------------------------------------------------------
 		logger.info("Test Example now ending.");
 	} //end test
-	@Test(dataProvider="hardCodedBrowsers", retryAnalyzer=Retry.class, groups={"functional", "Sample"})
+	//@Test(dataProvider="hardCodedBrowsers", retryAnalyzer=Retry.class, groups={"functional", "Sample"})
 	public void Example2(String browser, String version, String os, Method method) throws Exception {
 		logger.info("Starting test Example");
 
