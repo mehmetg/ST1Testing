@@ -243,7 +243,7 @@ public abstract class BaseTestClass implements SauceOnDemandSessionIdProvider, S
 		SauceOnDemandSessionIdProvider sessionIdProvider = (SauceOnDemandSessionIdProvider) result.getInstance();
 		String sessionId = sessionIdProvider.getSessionId();
 
-		if(System.getProperty("remoteRun").equalsIgnoreCase("true")){
+		/*if(System.getProperty("remoteRun").equalsIgnoreCase("true")){
 			try{
 				Map<String, Object> updates = new HashMap<String, Object>();
 				updates.put("passed", result.isSuccess());
@@ -251,7 +251,7 @@ public abstract class BaseTestClass implements SauceOnDemandSessionIdProvider, S
 				sauceREST.updateJobInfo(sessionId, updates);
 			} catch(Exception e){
 			}
-		}
+		}*/
 
 		try{
 			File file = new File(getExcelPath());
