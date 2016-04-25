@@ -1,0 +1,19 @@
+13:11:28.196 DEBUG BaseTestClass - Setting up SauceLabs username and access key in case of remote test run
+13:11:28.209 DEBUG BaseTestClass - Setting test name to Example
+13:11:28.236 INFO  ExampleTest - Starting test Example
+13:11:28.236 INFO  ExampleTest - Creating a local WebDriver
+13:11:28.236 INFO  BaseTestClass - Creating a local firefox WebDriver
+13:11:28.237 DEBUG BaseTestClass - Creating a Firefox WebDriver
+13:11:36.577 INFO  ExampleTest - Test Start
+13:11:36.577 INFO  ExampleTest - Setup and start the test
+13:11:38.632 INFO  ExampleTest - Verify Search Box
+13:11:38.633 INFO  ExampleTest - Verify that the search box is present
+13:11:39.136 INFO  TMX_lib - Verifying Images on the page from TCO
+13:11:39.137 DEBUG TMX_lib - Attempting to locate Images with identifier linkText
+13:11:39.257 INFO  TMX_lib - Expected text: Images
+13:11:39.257 INFO  TMX_lib -   Actual text: Images
+13:11:39.258 DEBUG TMX_lib - Capturing a screenshot
+13:11:39.437 INFO  TMX_lib - Getting the current date/time
+13:11:39.455 INFO  ExampleTest - Test Example now ending.
+13:11:39.457 DEBUG BaseTestClass - Test Example cleanup starting
+13:11:39.861 DEBUG BaseTestClass - Test Example cleanup ending

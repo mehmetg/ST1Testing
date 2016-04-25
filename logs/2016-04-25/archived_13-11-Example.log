@@ -1,0 +1,7 @@
+13:09:16.305 DEBUG BaseTestClass - Setting up SauceLabs username and access key in case of remote test run
+13:09:16.311 DEBUG BaseTestClass - Setting test name to Example
+13:09:16.331 INFO  ExampleTest - Starting test Example
+13:09:16.331 INFO  ExampleTest - Creating a remote WebDriver
+13:09:16.331 INFO  BaseTestClass - Starting setup of remote firefox WebDriver on a(n) Windows 7version 40
+13:09:16.339 INFO  BaseTestClass - Creating the remote WebDriver
+13:09:16.922 DEBUG BaseTestClass - Test Example cleanup starting
