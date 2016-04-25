@@ -23,7 +23,7 @@ public class ExampleTest extends BaseTestClass {
 	public void Example(String browser, String version, String os, Method method) throws Exception {
 		logger.info("Starting test Example");
 
-		SauceOnDemandTestListener.verboseMode = false;
+		//SauceOnDemandTestListener.verboseMode = false;
 
 		if(System.getProperty("remoteRun").equalsIgnoreCase("true")){
 			logger.info("Creating a remote WebDriver");
