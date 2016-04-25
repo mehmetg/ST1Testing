@@ -223,7 +223,7 @@ public abstract class BaseTestClass implements SauceOnDemandSessionIdProvider, S
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(Method testMethod) throws IOException{
 		String testName = testMethod.getName();
-		SauceOnDemandTestListener.verboseMode = false;
+		//SauceOnDemandTestListener.verboseMode = false;
 		ThreadContext.put("testName", testName);
 		logger.debug("Setting up SauceLabs username and access key in case of remote test run");
 		username = System.getenv("SAUCE_USER_NAME") !=null ? System.getenv("SAUCE_USER_NAME") : System.getenv("SAUCE_USERNAME");
