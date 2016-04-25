@@ -52,4 +52,37 @@ public class ExampleTest extends BaseTestClass {
 //--------------------------------------------------------------------------------------------
 		logger.info("Test Example now ending.");
 	} //end test
+	@Test(dataProvider="hardCodedBrowsers", retryAnalyzer=Retry.class, groups={"functional", "Sample"})
+	public void Example2(String browser, String version, String os, Method method) throws Exception {
+		logger.info("Starting test Example");
+
+		SauceOnDemandTestListener.verboseMode = false;
+
+		if(System.getProperty("remoteRun").equalsIgnoreCase("true")){
+			logger.info("Creating a remote WebDriver");
+			createDriver(browser, version, os, method.getName(), "REPLACE WITH TAG");
+		}
+		else {
+			logger.info("Creating a local WebDriver");
+			createDriver(browser);
+		}
+
+		getWebDriver().manage().window().maximize();
+		boolean bArg = false;
+		String sArg = "";
+		boolean isPassed = true;
+		String winHandleBefore = null;
+		String elementID = null;
+//--------------------------------------------------------------------------------------------
+		logger.info("Test Start");
+		logger.info("Setup and start the test");
+		getWebDriver().get("http://www.google.com");
+//--------------------------------------------------------------------------------------------
+		logger.info("Verify Search Box");
+		logger.info("Verify that the search box is present");
+		TMX_lib.waitForLoad(getWebDriver());
+		TMX_lib.verifyTextFromAD("Imagess", "Examples", "", "linkText", "Images", getWebDriver());
+//--------------------------------------------------------------------------------------------
+		logger.info("Test Example now ending.");
+	} //end test
 } //end class
